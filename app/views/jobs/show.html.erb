@@ -20,5 +20,15 @@
   <%= @job.date %>
 </p>
 
+<p>
+  <strong>Applied for:</strong>
+  <%= @job.applied_for %>
+</p>
+
+<p>
+  <strong>Response:</strong>
+  <%= @job.response %>
+</p>
+
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>

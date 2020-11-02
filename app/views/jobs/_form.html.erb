@@ -31,6 +31,16 @@
     <%= form.text_field :date %>
   </div>
 
+  <div class="field">
+    <%= form.label :applied_for %>
+    <%= form.check_box :applied_for %>
+  </div>
+
+  <div class="field">
+    <%= form.label :response %>
+    <%= form.check_box :response %>
+  </div>
+
   <div class="actions">
     <%= form.submit %>
   </div>
