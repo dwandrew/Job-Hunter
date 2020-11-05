@@ -34,6 +34,18 @@
   <strong>Response:</strong>
   <%= @job.response %>
 </p>
+<p>
+  <strong>Rejection:</strong>
+  <%= @job.rejection %>
+</p>
+<p>
+  <strong>Interview:</strong>
+  <%= @job.interview %>
+</p>
+<p>
+  <strong>Offer:</strong>
+  <%= @job.offer %>
+</p>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>
