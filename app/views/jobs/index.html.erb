@@ -25,7 +25,7 @@
       <tr class = <%= 
       if job.rejection 
         "job-card-reject"
-      elsif job.rejection == false
+      elsif job.offer
         "job-card-success"
       else 
        "job-card"
@@ -52,4 +52,4 @@
 
 <br>
 
-<%= link_to 'New Job', new_job_path %>
+<%=link_to 'New Job', new_job_path, class: "job-button" %>
