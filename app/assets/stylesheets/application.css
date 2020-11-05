@@ -17,3 +17,10 @@
  body {
      background-color: antiquewhite;
  }
+
+ .job-card{
+     border: solid;
+     background-color: azure;
+     padding: 5px;
+     margin: 5px;
+ }
