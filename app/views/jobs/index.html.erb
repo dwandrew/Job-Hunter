@@ -22,7 +22,15 @@
 
   <tbody>
     <% @jobs.each do |job| %>
-      <tr class = "job-card">
+      <tr class = <%= 
+      if job.rejection 
+        "job-card-reject"
+      elsif job.rejection == false
+        "job-card-success"
+      else 
+       "job-card"
+      end
+      %> >
         <td><%=job.id %></td>
         <td><%= job.title %></td>
         <td><%= job.company_name %></td>

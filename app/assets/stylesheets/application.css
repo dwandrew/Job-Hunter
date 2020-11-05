@@ -24,3 +24,24 @@
      padding: 5px;
      margin: 5px;
  }
+
+ .job-card-pending{
+    border: solid;
+    background-color: azure;
+    padding: 5px;
+    margin: 5px;
+ }
+
+ .job-card-success{
+    border: solid;
+    background-color: rgb(120, 201, 0);
+    padding: 5px;
+    margin: 5px;
+
+ }
+ .job-card-reject{
+    border: solid;
+    background-color: rgb(235, 55, 55);
+    padding: 5px;
+    margin: 5px;
+ }
