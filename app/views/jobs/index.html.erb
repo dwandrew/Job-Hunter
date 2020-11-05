@@ -13,6 +13,9 @@
       <th>Date</th>
       <th>Applied For</th>
       <th>Response</th>
+      <th>Rejection</th>
+      <th>Interview</th>
+      <th>Offer</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -28,6 +31,9 @@
         <td><%= job.date %></td>
         <td><%= job.applied_for %></td>
         <td><%= job.response %></td>
+        <td><%= job.rejection %></td>
+        <td><%= job.interview %></td>
+        <td><%= job.offer %></td>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
