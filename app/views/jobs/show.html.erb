@@ -28,24 +28,24 @@
 
 <p>
   <strong>Applied for:</strong>
-  <%= @job.applied_for %>
+  <%= @job.applied_for ? "yes" : "no" %>
 </p>
 
 <p>
   <strong>Response:</strong>
-  <%= @job.response %>
+  <%= @job.response ? "yes" : "no" %>
 </p>
 <p>
   <strong>Rejection:</strong>
-  <%= @job.rejection %>
+  <%= @job.rejection ? "yes" : "no" %>
 </p>
 <p>
   <strong>Interview:</strong>
-  <%= @job.interview %>
+  <%= @job.interview ? "yes" : "no" %>
 </p>
 <p>
   <strong>Offer:</strong>
-  <%= @job.offer %>
+  <%= @job.offer ? "yes" : "no" %>
 </p>
 
 <%= link_to 'Edit', edit_job_path(@job) %> |

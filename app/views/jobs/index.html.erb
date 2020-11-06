@@ -39,11 +39,11 @@
         <td><%= job.website %></td>
         <td>Click Show to view Description</td>
         <td><%= job.date %></td>
-        <td><%= job.applied_for %></td>
-        <td><%= job.response %></td>
-        <td><%= job.rejection %></td>
-        <td><%= job.interview %></td>
-        <td><%= job.offer %></td>
+        <td><%= job.applied_for ? "yes" : "no" %></td>
+        <td><%= job.response ? "yes" : "no" %></td>
+        <td><%= job.rejection ? "yes" : "no" %></td>
+        <td><%= job.interview ? "yes" : "no" %></td>
+        <td><%= job.offer ? "yes" : "no" %></td>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
